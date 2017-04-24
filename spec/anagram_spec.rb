@@ -30,4 +30,7 @@ describe "String#anagram" do
   it("Doesn't care about non-letter characters for word2") do
     expect("ruby!".anagram("bu ry")).to(include("These words are anagrams"))
   end
+  it("Returns false for repeat vowels") do
+    expect("ruby".anagram("uuuu")).to(include("This is not an anagram"))
+  end
 end

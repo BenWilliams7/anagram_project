@@ -18,7 +18,7 @@ class String
       if anaLength == word1.length && (word1.sort.join.squeeze.length == anaCheck.sort.join.squeeze.length)
         output = "These words are anagrams"
         if word1.join == word1.join.reverse
-        output += " and the first word is also a palindrome!"
+          output += " and the first word is also a palindrome!"
         else
           output += " but the first word is not a palindrome"
         end
@@ -26,7 +26,7 @@ class String
         if anaLength == 0
           output = "This is not an anagram BUT it is an antigram!"
         else
-        output = "This is not an anagram or an antigram"
+          output = "This is not an anagram or an antigram"
         end
       end
     elsif lackVowels == "nVwls"
