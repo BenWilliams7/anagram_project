@@ -6,7 +6,7 @@ class String
     anaLength = 0
     lackVowels = "nVwls"
     anaCheck.each do |char|
-      if word1.include?(char) && (word != anaCheck)
+      if word1.include?(char)
         anaLength += 1
       end
       if ["a","e","i","o","u","y"].include?(char)
@@ -14,7 +14,7 @@ class String
       end
     end
     if lackVowels == "has vowels"
-      if anaLength == word1.length && (word1.sort.join.squeeze.length == anaCheck.sort.join.squeeze.length)
+      if anaLength == word1.length && (word1.sort.join.squeeze.length == anaCheck.sort.join.squeeze.length) && (word1 != anaCheck)
         output = "These words are anagrams"
         if word1.join == word1.join.reverse
           output += " and the first word is also a palindrome!"
