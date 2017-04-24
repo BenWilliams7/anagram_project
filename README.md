@@ -25,7 +25,7 @@ Entering two strings will yield a comparison.
 
 ## Known Bugs
 
-Program thinks that (i.e.) "ruby" and "uuuu" are anagrams. Attempted requiring a condition of '&& (word1.join.squeeze.length == anaCheck.join.squeeze.length)' and other iterations with '.chars' but I couldn't get it to work. Does not successfully filter for repeat characters. If you find any other issues, please contact me at benjarwilliams at gmail dot com.
+No known bugs! If you find any other issues, please contact me at benjarwilliams at gmail dot com.
 
 ## Support and contact details
 
