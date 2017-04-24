@@ -33,4 +33,7 @@ describe "String#anagram" do
   it("Returns false for repeat vowels") do
     expect("ruby".anagram("uuuu")).to(include("This is not an anagram"))
   end
+  it("Does not recognize two of the same words as anagrams") do
+    expect("ruby".anagram("ruby")).to(include("This is not an anagram"))
+  end
 end

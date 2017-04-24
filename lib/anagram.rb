@@ -5,9 +5,8 @@ class String
     anaCheck = word2.downcase.split('')
     anaLength = 0
     lackVowels = "nVwls"
-    recheckLength = 0
     anaCheck.each do |char|
-      if word1.include?(char)
+      if word1.include?(char) && (word != anaCheck)
         anaLength += 1
       end
       if ["a","e","i","o","u","y"].include?(char)
